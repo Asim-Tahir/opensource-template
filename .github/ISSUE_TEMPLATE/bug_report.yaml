@@ -1,0 +1,53 @@
+---
+name: "WSL - Bug Report"
+description: Report a bug on Windows Subsystem for Linux
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please [search for existing issues](https://github.com/microsoft/WSL/issues) before creating a new one.
+      If you'd like to create a new bug report, please [read the guidance here](https://github.com/Microsoft/WSL/blob/master/CONTRIBUTING.md) before getting started. This will save you time.
+
+- type: input
+  id: prevalence
+  attributes:
+    label: Bug prevalence
+    description: "How often do you or others encounter this bug?"
+    placeholder: "Whenever I visit the user account page (1-2 times a week)"
+  validations:
+    required: true
+    
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+
+- type: dropdown
+ id: download
+ attributes:
+   label: How did you download the software?
+   options:
+     - Homebrew
+     - MacPorts
+     - apt-get
+     - Built from source
+ validations:
+   required: true
+
+- type: checkboxes
+  id: cat-preferences
+  attributes:
+    label: What kinds of cats do you like?
+    description: You may select more than one.
+    options:
+      - label: Orange cat (required. Everyone likes orange cats.)
+        required: true
+      - label: **Black cat**
