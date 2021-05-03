@@ -1,6 +1,6 @@
 ---
-name: "WSL - Bug Report"
-description: Report a bug on Windows Subsystem for Linux
+name: "Project-Name - Bug Report"
+description: Tell us what's going wrong 🤔
 body:
 - type: markdown
   attributes:
