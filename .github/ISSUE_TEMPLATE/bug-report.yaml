@@ -1,6 +1,6 @@
 ---
 name: "Project-Name - Bug Report"
-description: Tell us what's going wrong 🤔
+description: "Tell us what's going wrong 🤔"
 body:
 - type: markdown
   attributes:
